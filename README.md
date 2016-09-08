@@ -1,4 +1,4 @@
-lexer [![Build Status](https://travis-ci.org/nathanfaucett/js-pseudo_random.svg?branch=master)](https://travis-ci.org/nathanfaucett/js-pseudo_random)
+lexer [![Build Status](https://travis-ci.org/nathanfaucett/js-lexer.svg?branch=master)](https://travis-ci.org/nathanfaucett/js-lexer)
 ======
 simple text lexer
 
