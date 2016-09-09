@@ -1,6 +1,6 @@
 {
   "name": "@nathanfaucett/lexer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "simple text lexer",
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 var isNewline = require("@nathanfaucett/is_newline");
 
 
-var EOF = -1,
+var EOS = -1,
     LexerPrototype;
 
 
@@ -18,7 +18,7 @@ function Lexer(text) {
 }
 LexerPrototype = Lexer.prototype;
 
-Lexer.EOF = LexerPrototype.EOF = EOF;
+Lexer.EOS = LexerPrototype.EOS = Lexer.EOF = LexerPrototype.EOF = EOS;
 
 LexerPrototype.read = function() {
     var ch;
@@ -38,7 +38,7 @@ LexerPrototype.read = function() {
 
         return ch;
     } else {
-        return EOF;
+        return EOS;
     }
 };
 
@@ -63,6 +63,6 @@ LexerPrototype.charAt = function(index) {
     if (index >= 0 && index < this.length) {
         return this.text.charAt(index);
     } else {
-        return EOF;
+        return EOS;
     }
 };

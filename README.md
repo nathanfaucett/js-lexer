@@ -10,7 +10,7 @@ var Lexer = require("@nathanfaucett/lexer");
 var lexer = new Lexer("this is some text"),
     ch;
 
-while ((ch = lexer.read()) !== lexer.EOF) {
+while ((ch = lexer.read()) !== lexer.EOS) {
     console.log(ch);
 }
 ```

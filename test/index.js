@@ -24,7 +24,7 @@ tape("Lexer read", function(assert) {
     assert.equal(lexer.read(), "c");
     assert.equal(lexer.column, 2);
 
-    assert.equal(lexer.read(), lexer.EOF);
+    assert.equal(lexer.read(), lexer.EOS);
 
     assert.end();
 });
@@ -41,13 +41,13 @@ tape("Lexer unread", function(assert) {
     assert.equal(lexer.row, 2);
     assert.equal(lexer.column, 1);
 
-    lexer.unread()
+    lexer.unread();
     assert.equal(lexer.row, 1);
     assert.equal(lexer.column, 1);
 
     assert.equal(lexer.read(), "\n");
     assert.equal(lexer.read(), "b");
-    assert.equal(lexer.read(), lexer.EOF);
+    assert.equal(lexer.read(), lexer.EOS);
 
     assert.end();
 });
